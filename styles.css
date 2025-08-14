@@ -1,8 +1,12 @@
+html {
+    font-size: 16px;
+}
+
 .container {
     display: grid;
     grid-template-rows: 1fr 5fr;
     grid-template-columns: 1fr 5fr;
-    min-height: 100vh;
+    max-height: 100vh;
 }
 
 .sidebar {
@@ -36,7 +40,59 @@
     background-color: aliceblue;
 
     display: grid;
-    grid-template: 2fr 3fr / 5fr 2fr;
+    grid-template: 2fr 3fr / 5fr 3fr;
+}
+
+.header .search-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem 2rem;
+    /* margin: 1rem 2rem; */
+}
+
+.header .search-icon {
+  width: 1.5rem;  
+  height: 1.5rem; 
+  vertical-align: middle; 
+}
+
+.header .search-bar {
+  flex-grow: 1;
+  background-color: #f6f6f6;           
+  border: 1px solid #ccc; 
+  border-radius: 1.5rem;    
+  padding: 0.5rem;        
+}
+
+.header .profile-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 1rem 2rem;
+
+}
+
+.header .notification-icon {
+  width: 1.5rem;  
+  height: 1.5rem; 
+  vertical-align: middle; 
+}
+
+.header .profile-picture {
+    width: auto;
+    height: 3rem;
+}
+
+.profile-picture {
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-weight: bold;
 }
 
 .main-content {
