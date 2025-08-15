@@ -40,7 +40,7 @@ html {
     background-color: aliceblue;
 
     display: grid;
-    grid-template: 2fr 3fr / 5fr 3fr;
+    grid-template: 2fr 2.5fr / 5fr 3fr;
 }
 
 .header .search-section {
@@ -82,9 +82,9 @@ html {
   vertical-align: middle; 
 }
 
-.header .profile-picture {
+.profile-section .profile-picture {
     width: auto;
-    height: 3rem;
+    height: 2.5rem;
 }
 
 .profile-picture {
@@ -92,6 +92,58 @@ html {
 }
 
 .profile-name {
+    font-weight: bold;
+}
+
+.greet-section {
+    display: grid;
+    grid-template: 1fr / 1fr 5fr;
+}
+
+.greet-section .user-picture {
+    grid-row: 1;
+    grid-column: 1;
+
+    place-self: center;
+}
+
+.greet-section .profile-picture {
+    width: auto;
+    height: 4rem;
+}
+
+.greet-section .user-greeting {
+    grid-row: 1;
+    grid-column: 2;
+
+    align-self: center;
+}
+
+.greet-section #greet {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.greet-section #user-profile {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.header .action-buttons {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    align-items: center;
+}
+
+.header button {
+    
+    width: 6rem;
+    height: 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: dodgerblue;
+    color: aliceblue;
     font-weight: bold;
 }
 
@@ -107,3 +159,4 @@ html {
 .main-content .projects {
     grid-row: 1 / -1;
 }
+

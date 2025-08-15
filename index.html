@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
         <div class="sidebar">
@@ -33,7 +35,7 @@
         <div class="header">
             <div class="search-section">
                 <label for="searchbar">
-                        <img src="assets/images/magnify.svg" alt="Magnify icon" class="search-icon">
+                    <img src="assets/images/magnify.svg" alt="Magnify icon" class="search-icon">
                 </label>
                 <input type="search" id="searchbar" class="search-bar">
             </div>
@@ -42,11 +44,16 @@
                 <img src="assets/images/profile-pic.jpg" alt="A cat picture" class="profile-picture">
                 <p class="profile-name">Azryl Shamin</p>
             </div>
-            <div>
-                <p>Hi There</p>
-                <p>User</p>
+            <div class="greet-section">
+                <div class="user-picture">
+                    <img src="assets/images/profile-pic.jpg" alt="A cat picture" class="profile-picture">
+                </div>
+                <div class="user-greeting">
+                    <p id="greet">Hi There,</p>
+                    <p id="user-profile">Azryl Shamin (@azrylshamin)</p>
+                </div>
             </div>
-            <div>
+            <div class="action-buttons">
                 <button>New</button>
                 <button>Upload</button>
                 <button>Share</button>
@@ -61,11 +68,12 @@
             <div class="announcements">
                 <h2>Announcements</h2>
             </div>
-            
+
             <div class="trends">
                 <h2>Trending</h2>
             </div>
         </div>
     </div>
 </body>
+
 </html>
