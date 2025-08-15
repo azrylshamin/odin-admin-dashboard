@@ -12,10 +12,15 @@ html {
 .sidebar {
     grid-column: 1;
     grid-row: 1 / -1;
-    background-color: deepskyblue;
+    background-color: dodgerblue;
 
     display: grid;
     grid-template-rows: 2fr 2fr 1fr;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: aliceblue;
 }
 
 .sidebar .primary-nav {
@@ -25,13 +30,30 @@ html {
 }
 
 .sidebar .primary-nav .logo{
-        margin-bottom: 30px;    
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 30px;    
+}
+
+.sidebar .primary-nav .logo img{
+    width: 2.5rem;
+    height: auto;    
+}
+
+.sidebar .sidebar-button {
+    display: flex;
+    gap: 1rem;
+}
+
+.sidebar .sidebar-button-icon {
+    width: 1.5rem;
+    height: auto;
 }
 
 .sidebar .utility-nav {
     display: grid;
     margin: 4rem 1rem;
-    gap: 1px;
+    gap: 1rem;
 }
 
 .header {
